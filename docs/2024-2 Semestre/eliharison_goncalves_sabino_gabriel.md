@@ -29,7 +29,7 @@ Desenvolvedor Front-End <br>🎓 Desenvolvimento de Software e Multiplataforma <
 
 ![](https://shields.io/badge/react-black?logo=react&style=for-the-badge)![](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-# Badges <img src="./assets/Badge-Portfolio.png" width="100px" style="margin: 0 15px 0 0; border-radius: 99%" align="center"><img src="./assets/Badge-AluraGeek.png" width="100px" style="margin: 0 15px 0 0; border-radius: 99%" align="center"><img src="./assets/Badge-AluraFlix.png" width="100px" style="margin: 0 15px 0 0; border-radius: 99%" align="center">
+# Badges <img src="https://raw.githubusercontent.com/Eliharison/Eliharison/refs/heads/main/assets/Badge-Portfolio.png" width="100px" style="margin: 0 15px 0 0; border-radius: 99%" align="center"><img src="https://raw.githubusercontent.com/Eliharison/Eliharison/refs/heads/main/assets/Badge-AluraGeek.png" width="100px" style="margin: 0 15px 0 0; border-radius: 99%" align="center"><img src="https://raw.githubusercontent.com/Eliharison/Eliharison/refs/heads/main/assets/Badge-AluraGeek.png" width="100px" style="margin: 0 15px 0 0; border-radius: 99%" align="center">
 
 # 📊 GitHub:
 
