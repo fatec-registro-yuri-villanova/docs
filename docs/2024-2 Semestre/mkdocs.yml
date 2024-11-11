@@ -1,0 +1,17 @@
+site_name: Docs
+docs_dir: C:\Users\anacr\OneDrive\Área de Trabalho\Documentacao\docs\docs\2024-2 Semestre\docs
+theme:
+  name: material
+  palette:
+    primary: red
+    accent: red
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
