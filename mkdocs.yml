@@ -1,12 +1,10 @@
 site_name: Docs
 theme:
-  name: material
-  palette:
-    primary: red
-    accent: red
+  name: lux
+  nav_style: dark
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: Montserrat
+    code: Montserrat
 
 markdown_extensions: 
   - attr_list
