@@ -54,7 +54,7 @@ Partes do useEffect:
    useEffect(() => {
    // Código executado sempre que 'algumaVariavel' mudar
    }, [algumaVariavel]);
-  ```
+   ```
 
 3. Executar limpeza ao desmontar
    ``` javascript  
