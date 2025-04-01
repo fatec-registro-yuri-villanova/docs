@@ -74,6 +74,9 @@ Partes do useEffect:
 
 ## Exemplo Prático
 
+### Api
+   [Documentação](https://api.adviceslip.com/)
+
 ### 1. Estrutura de Tipos (types/advice.ts)
    ``` javascript  
    export interface Slip {
