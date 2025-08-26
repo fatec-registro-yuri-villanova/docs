@@ -1,4 +1,4 @@
-### ** O Universo do Desenvolvimento Cross-Platform**
+### **O Universo do Desenvolvimento Cross-Platform**
 
 O desenvolvimento de software vive em constante evolução, impulsionado pela diversidade de dispositivos e sistemas operacionais. Nesse cenário, o **desenvolvimento multiplataforma** (ou **cross-platform**) surge como uma abordagem estratégica para criar soluções que funcionam em múltiplos ambientes, como iOS, Android e web, a partir de uma **única base de código**.
 
