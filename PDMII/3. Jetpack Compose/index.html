@@ -906,9 +906,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#atividade-pratica-3-calculadora-de-gasto-de-combustivel" class="md-nav__link">
+  <a href="#atividade-pratica-3-calculadora-de-gasto-de-combustivel-e-consumo" class="md-nav__link">
     <span class="md-ellipsis">
-      Atividade prática 3: Calculadora de Gasto de Combustível
+      Atividade prática 3: Calculadora de Gasto de Combustível e Consumo
     </span>
   </a>
   
@@ -1400,9 +1400,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#atividade-pratica-3-calculadora-de-gasto-de-combustivel" class="md-nav__link">
+  <a href="#atividade-pratica-3-calculadora-de-gasto-de-combustivel-e-consumo" class="md-nav__link">
     <span class="md-ellipsis">
-      Atividade prática 3: Calculadora de Gasto de Combustível
+      Atividade prática 3: Calculadora de Gasto de Combustível e Consumo
     </span>
   </a>
   
@@ -1700,25 +1700,46 @@
 </ul>
 </li>
 </ul>
-<h4 id="atividade-pratica-3-calculadora-de-gasto-de-combustivel"><strong>Atividade prática 3: Calculadora de Gasto de Combustível</strong></h4>
+<h4 id="atividade-pratica-3-calculadora-de-gasto-de-combustivel-e-consumo"><strong>Atividade prática 3: Calculadora de Gasto de Combustível e Consumo</strong></h4>
 <ul>
 <li>
-<p><strong>Objetivo:</strong> Crie uma tela para calcular o gasto de combustível. A UI deve ter campos para o usuário inserir o valor e o tipo de combustível, e um botão que realiza o cálculo e exibe o resultado.</p>
+<p><strong>Objetivo:</strong> Crie uma tela para calcular o consumo médio do veículo (km/L) e o gasto total. A interface deve ter campos para o usuário inserir a <strong>distância percorrida</strong>, a <strong>quantidade de litros abastecidos</strong> e o <strong>preço por litro</strong>. Adicione um botão para realizar os dois cálculos e exibir os resultados.</p>
 <ol>
-<li>Crie uma variável de estado para o valor do combustível e outra para o tipo.</li>
-<li>Use <code>TextField</code> para cada uma das entradas.</li>
-<li>Adicione um <code>Button</code> para disparar a função de cálculo.</li>
-<li>Exiba o resultado do cálculo em um <code>Text</code>.</li>
+<li>Crie variáveis de estado para a distância, a quantidade de litros e o preço.</li>
+<li>Use <code>TextField</code> para cada uma das três entradas.</li>
+<li>Adicione um <code>Button</code> para disparar as funções de cálculo.</li>
+<li>Exiba os dois resultados (<code>Consumo Médio</code> e <code>Gasto Total</code>) em componentes <code>Text</code>.</li>
 </ol>
+</li>
+<li>
+<p><strong>Fórmulas de cálculo:</strong></p>
+<ul>
+<li><strong>Consumo Médio (km/L)</strong> = <code>Distância percorrida</code> / <code>Litros abastecidos</code></li>
+<li><strong>Gasto Total</strong> = <code>Litros abastecidos</code> * <code>Preço por litro</code></li>
+</ul>
 </li>
 <li>
 <p><strong>Teste de Mesa:</strong></p>
 <ul>
-<li><strong>Entrada:</strong> Valor do combustível: 5.50 (Gasolina), 4.20 (Etanol). Digite "5.50" no campo de valor e "Gasolina" no campo de tipo.</li>
-<li><strong>Saída Esperada:</strong> Ao clicar no botão, a tela deve exibir o resultado do cálculo, por exemplo: "O gasto total é de R$ [valor_calculado]".</li>
+<li>
+<p><strong>Entrada:</strong></p>
+<ul>
+<li>Distância percorrida: <code>100</code></li>
+<li>Litros abastecidos: <code>10</code></li>
+<li>Preço por litro: <code>5.50</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Saída Esperada:</strong> Ao clicar no botão, a tela deve exibir os dois resultados, por exemplo:</p>
+<ul>
+<li><code>Consumo médio: 10.0 km/L</code></li>
+<li><code>Gasto total: R$ 55.00</code></li>
 </ul>
 </li>
 </ul>
+</li>
+</ul>
+<p>Essa nova versão do enunciado faz com que o objetivo do aluno seja a própria descoberta do consumo, tornando a atividade mais completa. Isso está mais alinhado com o que você tinha em mente?</p>
 <h4 id="atividade-pratica-4-calculadora-de-imposto-de-renda"><strong>Atividade prática 4: Calculadora de Imposto de Renda</strong></h4>
 <ul>
 <li>
