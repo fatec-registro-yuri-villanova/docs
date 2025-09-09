@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../1.1%20Fundamentos/">
+        <link rel="prev" href="../..">
       
       
-        <link rel="next" href="../1.3%20Estruturas%20de%20Controle/">
+        <link rel="next" href="../introdu%C3%A7%C3%A3o/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>1.2 Programação Estruturada - Docs</title>
+        <title>Sistemas Distribuídos - Docs</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#programacao-estruturada-entrada-processamento-e-saida-de-dados" class="md-skip">
+        <a href="#sistemas-distribuidos" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1.2 Programação Estruturada
+              Sistemas Distribuídos
             
           </span>
         </div>
@@ -249,18 +249,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -276,7 +278,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             LDM
@@ -287,10 +289,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../LDM/Sistemas%20Distribu%C3%ADdos/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Sistemas Distribuídos
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -301,6 +325,179 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-o-que-sao-sistemas-distribuidos-sd" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. O que são Sistemas Distribuídos (SD)?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-tipos-de-sd-e-suas-implementacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Tipos de SD e suas implementações
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Tipos de SD e suas implementações">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-modelos-arquiteturais-mais-usados" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1. Modelos Arquiteturais mais usados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1. Modelos Arquiteturais mais usados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cliente-servidor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cliente-Servidor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#peer-to-peer-p2p" class="md-nav__link">
+    <span class="md-ellipsis">
+      Peer-to-Peer (P2P)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modelo-em-camadas-tiered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modelo em Camadas (Tiered)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arquitetura-de-microsservicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arquitetura de Microsserviços
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-as-principais-arquiteturas-eg-camadas-componentes-eventos-e-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. As principais arquiteturas (e.g. camadas, componentes, eventos e dados)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-como-os-processos-e-threads-distribuidos-funcionam" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Como os processos e threads distribuídos funcionam?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-nomeacao-de-entidades-em-sd" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Nomeação de entidades em SD
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-sincronizacao-de-processosthreads-e-relogios-em-sd" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Sincronização de processos/threads e relógios em SD
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-consistencia-e-replicacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Consistência e Replicação
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vantagens-e-desvantagens-dos-sistemas-distribuidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vantagens e Desvantagens dos Sistemas Distribuídos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vantagens e Desvantagens dos Sistemas Distribuídos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vantagens" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vantagens
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desvantagens" class="md-nav__link">
+    <span class="md-ellipsis">
+      Desvantagens
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -313,7 +510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LDM/introdu%C3%A7%C3%A3o/" class="md-nav__link">
+      <a href="../introdu%C3%A7%C3%A3o/" class="md-nav__link">
         
   
   
@@ -913,20 +1110,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -942,7 +1137,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             TP1
@@ -956,7 +1151,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../1.1%20Fundamentos/" class="md-nav__link">
+      <a href="../../TP1/1.1%20Fundamentos/" class="md-nav__link">
         
   
   
@@ -976,30 +1171,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    1.2 Programação Estruturada
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../TP1/1.2%20Programa%C3%A7%C3%A3o%20Estruturada/" class="md-nav__link">
         
   
   
@@ -1010,48 +1185,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#programacao-estruturada-entrada-processamento-e-saida-de-dados" class="md-nav__link">
-    <span class="md-ellipsis">
-      Programação Estruturada: Entrada, Processamento e Saída de Dados
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Programação Estruturada: Entrada, Processamento e Saída de Dados">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#revisao-completa" class="md-nav__link">
-    <span class="md-ellipsis">
-      Revisão Completa
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1064,7 +1197,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../1.3%20Estruturas%20de%20Controle/" class="md-nav__link">
+      <a href="../../TP1/1.3%20Estruturas%20de%20Controle/" class="md-nav__link">
         
   
   
@@ -1087,7 +1220,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../1.4%20Programa%C3%A7%C3%A3o%20Orientada%20a%20Objetos%20%28POO%29/" class="md-nav__link">
+      <a href="../../TP1/1.4%20Programa%C3%A7%C3%A3o%20Orientada%20a%20Objetos%20%28POO%29/" class="md-nav__link">
         
   
   
@@ -1127,6 +1260,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1135,19 +1270,148 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#programacao-estruturada-entrada-processamento-e-saida-de-dados" class="md-nav__link">
+  <a href="#1-o-que-sao-sistemas-distribuidos-sd" class="md-nav__link">
     <span class="md-ellipsis">
-      Programação Estruturada: Entrada, Processamento e Saída de Dados
+      1. O que são Sistemas Distribuídos (SD)?
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Programação Estruturada: Entrada, Processamento e Saída de Dados">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-tipos-de-sd-e-suas-implementacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Tipos de SD e suas implementações
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Tipos de SD e suas implementações">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#revisao-completa" class="md-nav__link">
+  <a href="#21-modelos-arquiteturais-mais-usados" class="md-nav__link">
     <span class="md-ellipsis">
-      Revisão Completa
+      2.1. Modelos Arquiteturais mais usados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1. Modelos Arquiteturais mais usados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cliente-servidor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cliente-Servidor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#peer-to-peer-p2p" class="md-nav__link">
+    <span class="md-ellipsis">
+      Peer-to-Peer (P2P)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modelo-em-camadas-tiered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modelo em Camadas (Tiered)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arquitetura-de-microsservicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arquitetura de Microsserviços
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-as-principais-arquiteturas-eg-camadas-componentes-eventos-e-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. As principais arquiteturas (e.g. camadas, componentes, eventos e dados)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-como-os-processos-e-threads-distribuidos-funcionam" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Como os processos e threads distribuídos funcionam?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-nomeacao-de-entidades-em-sd" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Nomeação de entidades em SD
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-sincronizacao-de-processosthreads-e-relogios-em-sd" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Sincronização de processos/threads e relógios em SD
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-consistencia-e-replicacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Consistência e Replicação
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vantagens-e-desvantagens-dos-sistemas-distribuidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vantagens e Desvantagens dos Sistemas Distribuídos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vantagens e Desvantagens dos Sistemas Distribuídos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vantagens" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vantagens
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desvantagens" class="md-nav__link">
+    <span class="md-ellipsis">
+      Desvantagens
     </span>
   </a>
   
@@ -1174,73 +1438,116 @@
 
 
 
-  <h1>1.2 Programação Estruturada</h1>
-
-<h3 id="programacao-estruturada-entrada-processamento-e-saida-de-dados">Programação Estruturada: Entrada, Processamento e Saída de Dados</h3>
-<p>A <strong>programação estruturada</strong> é um modelo que segue um fluxo lógico e sequencial de instruções, geralmente dividido em três fases: <strong>Entrada</strong>, <strong>Processamento</strong> e <strong>Saída</strong>.</p>
-<p><strong>Entrada de Dados (Input)</strong>: Fase em que o programa recebe informações do usuário. A classe <code>Scanner</code> possui diversos métodos para ler tipos diferentes de dados.</p>
-<p>Métodos de Entrada de Dados</p>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">LeituraDeDados</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">        </span><span class="n">Scanner</span><span class="w"> </span><span class="n">entrada</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Digite um número inteiro: &quot;</span><span class="p">);</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">numero</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">entrada</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Digite um número com vírgula: &quot;</span><span class="p">);</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">decimal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">entrada</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Digite uma palavra: &quot;</span><span class="p">);</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">palavra</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">entrada</span><span class="p">.</span><span class="na">next</span><span class="p">();</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Você digitou: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">numero</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;, &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">decimal</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;, &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">palavra</span><span class="p">);</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">        </span><span class="n">entrada</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="p">}</span>
-</span></code></pre></div>
-<p><strong>Processamento</strong>: Fase onde o programa realiza os cálculos ou a lógica de negócio com os dados de entrada.</p>
-<p>Processamento Simples</p>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">valor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">100.0</span><span class="p">;</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kt">double</span><span class="w"> </span><span class="n">taxa</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.10</span><span class="p">;</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kt">double</span><span class="w"> </span><span class="n">resultado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">valor</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">valor</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">taxa</span><span class="p">);</span>
-</span></code></pre></div>
-<p><strong>Saída de Dados (Output)</strong>: Fase em que o programa exibe o resultado do processamento.</p>
-<p>Saída de Dados Formatada</p>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">valorFinal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">110.0</span><span class="p">;</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;O valor final é: R$&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">valorFinal</span><span class="p">);</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1">// Saída: O valor final é: R$110.0</span>
-</span></code></pre></div>
-<h4 id="revisao-completa">Revisão Completa</h4>
-<p>Este código demonstra o fluxo completo de entrada, processamento e saída para calcular o valor de uma prestação em atraso.</p>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">PrestacaoAtraso</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">        </span><span class="n">Scanner</span><span class="w"> </span><span class="n">entrada</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">        </span><span class="c1">// Entrada de dados</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Digite o valor da prestação: &quot;</span><span class="p">);</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">valor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">entrada</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Digite a taxa de juros (%): &quot;</span><span class="p">);</span>
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">taxa</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">entrada</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Digite a quantidade de meses em atraso: &quot;</span><span class="p">);</span>
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">tempo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">entrada</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>
-</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">        </span><span class="c1">// Processamento</span>
-</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">valorAtraso</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">valor</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">valor</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">taxa</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">100</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">tempo</span><span class="p">);</span>
-</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>
-</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="w">        </span><span class="c1">// Saída</span>
-</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;O valor total da prestação em atraso é: R$ &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">valorAtraso</span><span class="p">);</span>
-</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>
-</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="w">        </span><span class="n">entrada</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
-</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="p">}</span>
-</span></code></pre></div>
+<h1 id="sistemas-distribuidos">Sistemas Distribuídos</h1>
+<h2 id="1-o-que-sao-sistemas-distribuidos-sd">1. O que são Sistemas Distribuídos (SD)?</h2>
+<p>Um <strong>sistema distribuído</strong> é uma coleção de computadores autônomos que se comunicam através de uma rede, mas que, para o usuário final, funcionam como um único sistema coerente. A ideia central é que esses computadores trabalhem juntos para alcançar um objetivo comum. </p>
+<hr />
+<h2 id="2-tipos-de-sd-e-suas-implementacoes">2. Tipos de SD e suas implementações</h2>
+<h3 id="21-modelos-arquiteturais-mais-usados"><strong>2.1. Modelos Arquiteturais mais usados</strong></h3>
+<p>Existem diferentes modelos arquitetônicos que definem como os componentes de um sistema distribuído interagem. A escolha do modelo impacta diretamente na escalabilidade, na tolerância a falhas e na complexidade do sistema.</p>
+<h4 id="cliente-servidor"><strong>Cliente-Servidor</strong></h4>
+<p>Este é o modelo mais tradicional e amplamente utilizado. A arquitetura é dividida em dois papéis principais:</p>
+<ul>
+<li><strong>Cliente:</strong> Um processo que requisita um serviço, como um navegador web ou um aplicativo de celular. Ele inicia a comunicação.</li>
+<li><strong>Servidor:</strong> Um processo que provê um serviço, aguardando requisições, processando-as e enviando uma resposta.</li>
+</ul>
+<p>A grande vantagem é a <strong>centralização da lógica de negócio e dos dados no servidor</strong>, o que facilita o gerenciamento e a segurança. A desvantagem é que o servidor pode se tornar um <strong>gargalo de desempenho</strong> e um <strong>ponto único de falha</strong> se não houver redundância.</p>
+<ul>
+<li><strong>Exemplos:</strong> Navegação na internet, email, e acesso a bancos de dados.</li>
+</ul>
+<h4 id="peer-to-peer-p2p"><strong>Peer-to-Peer (P2P)</strong></h4>
+<p>Neste modelo, não há uma hierarquia fixa. Todos os participantes (chamados de <strong>peers</strong>) têm as mesmas responsabilidades, atuando como clientes e servidores ao mesmo tempo.</p>
+<ul>
+<li><strong>Vantagens:</strong> O sistema é altamente <strong>tolerante a falhas</strong>, pois a falha de um peer não afeta a funcionalidade geral. É extremamente <strong>escalável</strong> e eficiente para compartilhamento de recursos, já que a capacidade da rede cresce com o número de peers.</li>
+<li>
+<p><strong>Desvantagens:</strong> A <strong>segurança e a consistência dos dados</strong> são mais difíceis de garantir sem um controle central.</p>
+</li>
+<li>
+<p><strong>Exemplos:</strong> Redes de compartilhamento de arquivos como o BitTorrent e redes de criptomoedas como o Bitcoin.</p>
+</li>
+</ul>
+<h4 id="modelo-em-camadas-tiered"><strong>Modelo em Camadas (Tiered)</strong></h4>
+<p>Este modelo organiza a arquitetura do sistema em camadas lógicas distintas, separando responsabilidades. É uma evolução do modelo cliente-servidor para sistemas mais complexos. A arquitetura de três camadas (3-Tier) é a mais comum:</p>
+<ol>
+<li><strong>Camada de Apresentação (Front-end):</strong> A interface do usuário.</li>
+<li><strong>Camada de Lógica de Negócio (Back-end):</strong> Onde a lógica da aplicação é executada.</li>
+<li>
+<p><strong>Camada de Dados:</strong> Responsável por armazenar e gerenciar os dados.</p>
+</li>
+<li>
+<p><strong>Vantagens:</strong> A separação de responsabilidades torna o sistema <strong>mais fácil de gerenciar, manter e escalar</strong>, já que cada camada pode ser escalada independentemente.</p>
+</li>
+<li><strong>Exemplos:</strong> A maioria dos aplicativos web modernos.</li>
+</ol>
+<h4 id="arquitetura-de-microsservicos"><strong>Arquitetura de Microsserviços</strong></h4>
+<p>Esta é uma abordagem moderna que quebra uma aplicação monolítica em um conjunto de pequenos serviços independentes e fracamente acoplados.</p>
+<ul>
+<li><strong>Vantagens:</strong> Cada serviço pode ser desenvolvido, implantado e escalado de forma independente, permitindo que diferentes equipes trabalhem em paralelo. Além disso, cada serviço pode ser construído com a tecnologia que melhor se adapta à sua função.</li>
+<li>
+<p><strong>Desvantagens:</strong> Aumenta muito a <strong>complexidade de gerenciamento</strong>. É necessário lidar com a comunicação entre os serviços e a consistência de dados entre eles.</p>
+</li>
+<li>
+<p><strong>Exemplos:</strong> Plataformas como Netflix e Amazon.</p>
+</li>
+</ul>
+<hr />
+<h2 id="3-as-principais-arquiteturas-eg-camadas-componentes-eventos-e-dados">3. As principais arquiteturas (e.g. camadas, componentes, eventos e dados)</h2>
+<p>A arquitetura de um sistema distribuído pode ser categorizada pela forma como seus componentes interagem.</p>
+<ul>
+<li><strong>Arquiteturas baseadas em camadas:</strong> Como o modelo Tiered, separam a aplicação em camadas lógicas, facilitando a manutenção e a escalabilidade.</li>
+<li><strong>Arquiteturas baseadas em componentes:</strong> Focam na modularidade, onde cada componente é uma unidade autônoma com uma função específica.</li>
+<li><strong>Arquiteturas baseadas em eventos:</strong> Os componentes se comunicam através de eventos (mensagens assíncronas), desacoplando os serviços.</li>
+<li><strong>Arquiteturas orientadas a dados:</strong> A comunicação se dá por meio de um espaço de dados compartilhado, onde os componentes acessam e modificam os dados.</li>
+</ul>
+<hr />
+<h2 id="4-como-os-processos-e-threads-distribuidos-funcionam">4. Como os processos e threads distribuídos funcionam?</h2>
+<p>Em sistemas distribuídos, a comunicação entre processos e threads é fundamental.</p>
+<ul>
+<li><strong>Comunicação Cliente/Servidor:</strong> O modelo mais comum. Um processo cliente envia uma mensagem (requisição) para um processo servidor, que a processa e envia uma resposta.</li>
+<li><strong>Comunicação entre Processos (IPC):</strong> Mecanismos como sockets, chamadas de procedimento remoto (RPC) ou middleware de mensagens permitem que processos em computadores diferentes troquem informações.</li>
+<li><strong>Migração de Código:</strong> Permite que o código de um processo seja movido de um computador para outro em tempo de execução, para balanceamento de carga ou tolerância a falhas.</li>
+</ul>
+<hr />
+<h2 id="5-nomeacao-de-entidades-em-sd">5. Nomeação de entidades em SD</h2>
+<p>A nomeação é o processo de mapear identificadores humanos para entidades do sistema distribuído (como arquivos ou serviços). O objetivo é permitir que as entidades sejam localizadas e acessadas de forma transparente, independentemente de onde estejam. O DNS (Domain Name System) é o exemplo mais conhecido, mapeando nomes de domínio para endereços IP.</p>
+<hr />
+<h2 id="6-sincronizacao-de-processosthreads-e-relogios-em-sd">6. Sincronização de processos/threads e relógios em SD</h2>
+<p>Sincronizar eventos em sistemas distribuídos é um grande desafio, pois não há um relógio global.</p>
+<ul>
+<li><strong>Relógios Físicos:</strong> Protocolos como o <strong>NTP (Network Time Protocol)</strong> tentam manter os relógios dos computadores sincronizados com um servidor de tempo global.</li>
+<li><strong>Relógios Lógicos:</strong> Uma abordagem mais comum. Eles se preocupam com a ordem dos eventos.<ul>
+<li><strong>Relógios de Lamport:</strong> Atribuem um carimbo de tempo a cada evento.</li>
+<li><strong>Relógios Vetoriais:</strong> Oferecem uma ordem de eventos mais precisa, que também captura a causalidade entre eles.</li>
+</ul>
+</li>
+<li><strong>Sincronização de Processos/Threads:</strong> Mecanismos de exclusão mútua distribuída garantem que apenas um processo por vez possa acessar um recurso compartilhado.</li>
+</ul>
+<hr />
+<h2 id="7-consistencia-e-replicacao">7. Consistência e Replicação</h2>
+<p>A replicação de dados (criar cópias) é usada para aumentar a disponibilidade e o desempenho, mas gera o problema da consistência.</p>
+<ul>
+<li><strong>Replicação:</strong> Aumenta a tolerância a falhas e a performance.</li>
+<li><strong>Consistência:</strong> Garante que todas as réplicas de um dado sejam idênticas ou sigam um conjunto de regras.<ul>
+<li><strong>Consistência Forte:</strong> Uma escrita deve ser refletida em todas as réplicas antes de ser considerada completa.</li>
+<li><strong>Consistência Eventual:</strong> As réplicas podem ser inconsistentes temporariamente, mas, com o tempo, elas convergirão para o mesmo estado. Este modelo é mais escalável e usado em sistemas modernos como bancos de dados NoSQL.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="vantagens-e-desvantagens-dos-sistemas-distribuidos">Vantagens e Desvantagens dos Sistemas Distribuídos</h2>
+<h3 id="vantagens">Vantagens</h3>
+<ul>
+<li><strong>Escalabilidade:</strong> Fácil de adicionar novos computadores para lidar com o aumento da demanda.</li>
+<li><strong>Tolerância a Falhas:</strong> A redundância permite que o sistema continue funcionando mesmo com a falha de um componente.</li>
+<li><strong>Melhoria de Desempenho e Custo-benefício:</strong> O processamento paralelo acelera tarefas e é mais econômico usar vários computadores comuns do que um único computador muito potente.</li>
+</ul>
+<h3 id="desvantagens">Desvantagens</h3>
+<ul>
+<li><strong>Complexidade de Gerenciamento:</strong> Projetar e depurar sistemas distribuídos é complexo.</li>
+<li><strong>Segurança:</strong> Aumenta a superfície de ataque, já que cada nó é uma potencial vulnerabilidade.</li>
+<li><strong>Problemas de Rede:</strong> O desempenho e a consistência podem ser afetados por problemas de conectividade.</li>
+<li><strong>Custo de Desenvolvimento e Manutenção:</strong> Requer profissionais com habilidades especializadas.</li>
+</ul>
 
 
 
