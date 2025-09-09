@@ -1,0 +1,120 @@
+# Sistemas Distribuídos
+
+## 1. O que são Sistemas Distribuídos (SD)?
+
+Um **sistema distribuído** é uma coleção de computadores autônomos que se comunicam através de uma rede, mas que, para o usuário final, funcionam como um único sistema coerente. A ideia central é que esses computadores trabalhem juntos para alcançar um objetivo comum. 
+
+---
+
+## 2. Tipos de SD e suas implementações
+
+### **2.1. Modelos Arquiteturais mais usados**
+
+Existem diferentes modelos arquitetônicos que definem como os componentes de um sistema distribuído interagem. A escolha do modelo impacta diretamente na escalabilidade, na tolerância a falhas e na complexidade do sistema.
+
+#### **Cliente-Servidor**
+
+Este é o modelo mais tradicional e amplamente utilizado. A arquitetura é dividida em dois papéis principais:
+
+* **Cliente:** Um processo que requisita um serviço, como um navegador web ou um aplicativo de celular. Ele inicia a comunicação.
+* **Servidor:** Um processo que provê um serviço, aguardando requisições, processando-as e enviando uma resposta.
+
+A grande vantagem é a **centralização da lógica de negócio e dos dados no servidor**, o que facilita o gerenciamento e a segurança. A desvantagem é que o servidor pode se tornar um **gargalo de desempenho** e um **ponto único de falha** se não houver redundância.
+
+* **Exemplos:** Navegação na internet, email, e acesso a bancos de dados.
+
+#### **Peer-to-Peer (P2P)**
+
+Neste modelo, não há uma hierarquia fixa. Todos os participantes (chamados de **peers**) têm as mesmas responsabilidades, atuando como clientes e servidores ao mesmo tempo.
+
+* **Vantagens:** O sistema é altamente **tolerante a falhas**, pois a falha de um peer não afeta a funcionalidade geral. É extremamente **escalável** e eficiente para compartilhamento de recursos, já que a capacidade da rede cresce com o número de peers.
+* **Desvantagens:** A **segurança e a consistência dos dados** são mais difíceis de garantir sem um controle central.
+
+* **Exemplos:** Redes de compartilhamento de arquivos como o BitTorrent e redes de criptomoedas como o Bitcoin.
+
+#### **Modelo em Camadas (Tiered)**
+
+Este modelo organiza a arquitetura do sistema em camadas lógicas distintas, separando responsabilidades. É uma evolução do modelo cliente-servidor para sistemas mais complexos. A arquitetura de três camadas (3-Tier) é a mais comum:
+
+1.  **Camada de Apresentação (Front-end):** A interface do usuário.
+2.  **Camada de Lógica de Negócio (Back-end):** Onde a lógica da aplicação é executada.
+3.  **Camada de Dados:** Responsável por armazenar e gerenciar os dados.
+
+* **Vantagens:** A separação de responsabilidades torna o sistema **mais fácil de gerenciar, manter e escalar**, já que cada camada pode ser escalada independentemente.
+* **Exemplos:** A maioria dos aplicativos web modernos.
+
+#### **Arquitetura de Microsserviços**
+
+Esta é uma abordagem moderna que quebra uma aplicação monolítica em um conjunto de pequenos serviços independentes e fracamente acoplados.
+
+* **Vantagens:** Cada serviço pode ser desenvolvido, implantado e escalado de forma independente, permitindo que diferentes equipes trabalhem em paralelo. Além disso, cada serviço pode ser construído com a tecnologia que melhor se adapta à sua função.
+* **Desvantagens:** Aumenta muito a **complexidade de gerenciamento**. É necessário lidar com a comunicação entre os serviços e a consistência de dados entre eles.
+
+* **Exemplos:** Plataformas como Netflix e Amazon.
+
+---
+
+## 3. As principais arquiteturas (e.g. camadas, componentes, eventos e dados)
+
+A arquitetura de um sistema distribuído pode ser categorizada pela forma como seus componentes interagem.
+
+* **Arquiteturas baseadas em camadas:** Como o modelo Tiered, separam a aplicação em camadas lógicas, facilitando a manutenção e a escalabilidade.
+* **Arquiteturas baseadas em componentes:** Focam na modularidade, onde cada componente é uma unidade autônoma com uma função específica.
+* **Arquiteturas baseadas em eventos:** Os componentes se comunicam através de eventos (mensagens assíncronas), desacoplando os serviços.
+* **Arquiteturas orientadas a dados:** A comunicação se dá por meio de um espaço de dados compartilhado, onde os componentes acessam e modificam os dados.
+
+---
+
+## 4. Como os processos e threads distribuídos funcionam?
+
+Em sistemas distribuídos, a comunicação entre processos e threads é fundamental.
+
+* **Comunicação Cliente/Servidor:** O modelo mais comum. Um processo cliente envia uma mensagem (requisição) para um processo servidor, que a processa e envia uma resposta.
+* **Comunicação entre Processos (IPC):** Mecanismos como sockets, chamadas de procedimento remoto (RPC) ou middleware de mensagens permitem que processos em computadores diferentes troquem informações.
+* **Migração de Código:** Permite que o código de um processo seja movido de um computador para outro em tempo de execução, para balanceamento de carga ou tolerância a falhas.
+
+---
+
+## 5. Nomeação de entidades em SD
+
+A nomeação é o processo de mapear identificadores humanos para entidades do sistema distribuído (como arquivos ou serviços). O objetivo é permitir que as entidades sejam localizadas e acessadas de forma transparente, independentemente de onde estejam. O DNS (Domain Name System) é o exemplo mais conhecido, mapeando nomes de domínio para endereços IP.
+
+---
+
+## 6. Sincronização de processos/threads e relógios em SD
+
+Sincronizar eventos em sistemas distribuídos é um grande desafio, pois não há um relógio global.
+
+* **Relógios Físicos:** Protocolos como o **NTP (Network Time Protocol)** tentam manter os relógios dos computadores sincronizados com um servidor de tempo global.
+* **Relógios Lógicos:** Uma abordagem mais comum. Eles se preocupam com a ordem dos eventos.
+    * **Relógios de Lamport:** Atribuem um carimbo de tempo a cada evento.
+    * **Relógios Vetoriais:** Oferecem uma ordem de eventos mais precisa, que também captura a causalidade entre eles.
+* **Sincronização de Processos/Threads:** Mecanismos de exclusão mútua distribuída garantem que apenas um processo por vez possa acessar um recurso compartilhado.
+
+---
+
+## 7. Consistência e Replicação
+
+A replicação de dados (criar cópias) é usada para aumentar a disponibilidade e o desempenho, mas gera o problema da consistência.
+
+* **Replicação:** Aumenta a tolerância a falhas e a performance.
+* **Consistência:** Garante que todas as réplicas de um dado sejam idênticas ou sigam um conjunto de regras.
+    * **Consistência Forte:** Uma escrita deve ser refletida em todas as réplicas antes de ser considerada completa.
+    * **Consistência Eventual:** As réplicas podem ser inconsistentes temporariamente, mas, com o tempo, elas convergirão para o mesmo estado. Este modelo é mais escalável e usado em sistemas modernos como bancos de dados NoSQL.
+
+---
+
+## Vantagens e Desvantagens dos Sistemas Distribuídos
+
+### Vantagens
+
+* **Escalabilidade:** Fácil de adicionar novos computadores para lidar com o aumento da demanda.
+* **Tolerância a Falhas:** A redundância permite que o sistema continue funcionando mesmo com a falha de um componente.
+* **Melhoria de Desempenho e Custo-benefício:** O processamento paralelo acelera tarefas e é mais econômico usar vários computadores comuns do que um único computador muito potente.
+
+### Desvantagens
+
+* **Complexidade de Gerenciamento:** Projetar e depurar sistemas distribuídos é complexo.
+* **Segurança:** Aumenta a superfície de ataque, já que cada nó é uma potencial vulnerabilidade.
+* **Problemas de Rede:** O desempenho e a consistência podem ser afetados por problemas de conectividade.
+* **Custo de Desenvolvimento e Manutenção:** Requer profissionais com habilidades especializadas.
