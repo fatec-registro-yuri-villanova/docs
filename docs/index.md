@@ -1,21 +1,14 @@
-# Setup
+# println("Hello world")
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+> Este projeto tem como objetivo ser um centralizador de material de apoio aos alunos do curso de **Desenvolvimento de Sistemas para a Internet (DSM)** da FATEC Registro.
 
-## Commands
-* `pip install mkdocs` - To install MkDocs.
-* `pip install mkdocs-material` - To install mkdocs-material.
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Aqui você encontrará conteúdos organizados por disciplina, incluindo atividades, revisões, exemplos de código e outros recursos úteis para apoiar seus estudos ao longo do semestre.
 
-## Project layout
+## Como navegar
+- Utilize o menu lateral para acessar os materiais de cada disciplina.
+- Os conteúdos estão divididos por módulos e tópicos, facilitando a busca por assuntos específicos.
+- Novos materiais podem ser adicionados conforme a necessidade dos alunos.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
-         ...       # Other markdown pages, images and other files.
-                  ...       # Other markdown pages, images and other files.
-                                    ...       # Other markdown pages, images and other files.
+## Sobre o projeto
+Este repositório é colaborativo e está aberto para contribuições de alunos e professores. Sinta-se à vontade para sugerir melhorias ou enviar novos materiais!
+
