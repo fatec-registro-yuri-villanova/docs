@@ -1810,6 +1810,8 @@
 <h3 id="refatorando-contador-com-entrada-do-usuario">Refatorando: Contador com Entrada do Usuário</h3>
 <p>Para ilustrar esses conceitos, vamos refatorar o contador da semana anterior para que o usuário possa digitar o valor de incremento, usando o conceito de <code>ViewModel</code> e <code>Screen State</code>.</p>
 <h4 id="1-criando-a-classe-do-viewmodel">1. Criando a Classe do ViewModel</h4>
+<p>repo aula: https://github.com/fatec-registro-yuri-villanova/viewmodel
+repo exemplo avançado:https://github.com/fatec-registro-yuri-villanova/decode-viewmodel</p>
 <p>Primeiro, criamos a <code>data class</code> para representar o estado da nossa tela. Em seguida, criamos a classe <code>CounterViewModel</code> para gerenciar esse estado.</p>
 <div class="language-kotlin highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">data</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nc">CounterUiState</span><span class="p">(</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">count</span><span class="p">:</span><span class="w"> </span><span class="kt">Int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">,</span>
