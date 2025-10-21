@@ -31,11 +31,14 @@ CI & deployment notes
 - CI workflows use `actions/setup-python` and run `pip install mkdocs-material` then `mkdocs gh-deploy --force`.
 - Changes under `docs/**` trigger the `Build GitHub Pages` workflow which builds and deploys.
 
-Repository conventions and useful patterns
+-Repository conventions and useful patterns
 - Keep image assets next to the markdown that references them (see `docs/DSM5 | PDMII/image-*.png`). Use relative paths in markdown.
 - Many folder names include a pipe character (`|`) and spaces (e.g. `DSM5 | PDMII`). Preserve these names; navigation and links assume them.
 - Use standard Markdown; the project enables these extensions in `mkdocs.yml`: `attr_list`, `pymdownx.*` (snippets, superfences, inlinehilite, highlight).
 - Do not rename `index.md` at root — it is the site entry point.
+
+Didactic writing & style
+- This repository follows a concise didactic style. See `docs/STYLE_GUIDE.md` for the project's writing conventions (voice, structure, examples, exercises and image placement). AI agents should follow that guide when editing or creating content.
 
 Examples from the codebase
 - Edit `docs/DSM5 | PDMII/5. Navegação.md` to update navigation content.
