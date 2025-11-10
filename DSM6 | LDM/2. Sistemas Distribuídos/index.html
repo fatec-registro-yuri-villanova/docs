@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
     
     
       
@@ -1385,36 +1385,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-como-os-processos-e-threads-distribuidos-funcionam" class="md-nav__link">
+  <a href="#4-consistencia-e-replicacao" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Como os processos e threads distribuídos funcionam?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-nomeacao-de-entidades-em-sd" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Nomeação de entidades em SD
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-sincronizacao-de-processosthreads-e-relogios-em-sd" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Sincronização de processos/threads e relógios em SD
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-consistencia-e-replicacao" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. Consistência e Replicação
+      4. Consistência e Replicação
     </span>
   </a>
   
@@ -1669,36 +1642,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-como-os-processos-e-threads-distribuidos-funcionam" class="md-nav__link">
+  <a href="#4-consistencia-e-replicacao" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Como os processos e threads distribuídos funcionam?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-nomeacao-de-entidades-em-sd" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Nomeação de entidades em SD
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-sincronizacao-de-processosthreads-e-relogios-em-sd" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Sincronização de processos/threads e relógios em SD
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-consistencia-e-replicacao" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. Consistência e Replicação
+      4. Consistência e Replicação
     </span>
   </a>
   
@@ -1816,30 +1762,7 @@
 <li><strong>Arquiteturas orientadas a dados:</strong> A comunicação se dá por meio de um espaço de dados compartilhado, onde os componentes acessam e modificam os dados.</li>
 </ul>
 <hr />
-<h2 id="4-como-os-processos-e-threads-distribuidos-funcionam">4. Como os processos e threads distribuídos funcionam?</h2>
-<p>Em sistemas distribuídos, a comunicação entre processos e threads é fundamental.</p>
-<ul>
-<li><strong>Comunicação Cliente/Servidor:</strong> O modelo mais comum. Um processo cliente envia uma mensagem (requisição) para um processo servidor, que a processa e envia uma resposta.</li>
-<li><strong>Comunicação entre Processos (IPC):</strong> Mecanismos como sockets, chamadas de procedimento remoto (RPC) ou middleware de mensagens permitem que processos em computadores diferentes troquem informações.</li>
-<li><strong>Migração de Código:</strong> Permite que o código de um processo seja movido de um computador para outro em tempo de execução, para balanceamento de carga ou tolerância a falhas.</li>
-</ul>
-<hr />
-<h2 id="5-nomeacao-de-entidades-em-sd">5. Nomeação de entidades em SD</h2>
-<p>A nomeação é o processo de mapear identificadores humanos para entidades do sistema distribuído (como arquivos ou serviços). O objetivo é permitir que as entidades sejam localizadas e acessadas de forma transparente, independentemente de onde estejam. O DNS (Domain Name System) é o exemplo mais conhecido, mapeando nomes de domínio para endereços IP.</p>
-<hr />
-<h2 id="6-sincronizacao-de-processosthreads-e-relogios-em-sd">6. Sincronização de processos/threads e relógios em SD</h2>
-<p>Sincronizar eventos em sistemas distribuídos é um grande desafio, pois não há um relógio global.</p>
-<ul>
-<li><strong>Relógios Físicos:</strong> Protocolos como o <strong>NTP (Network Time Protocol)</strong> tentam manter os relógios dos computadores sincronizados com um servidor de tempo global.</li>
-<li><strong>Relógios Lógicos:</strong> Uma abordagem mais comum. Eles se preocupam com a ordem dos eventos.<ul>
-<li><strong>Relógios de Lamport:</strong> Atribuem um carimbo de tempo a cada evento.</li>
-<li><strong>Relógios Vetoriais:</strong> Oferecem uma ordem de eventos mais precisa, que também captura a causalidade entre eles.</li>
-</ul>
-</li>
-<li><strong>Sincronização de Processos/Threads:</strong> Mecanismos de exclusão mútua distribuída garantem que apenas um processo por vez possa acessar um recurso compartilhado.</li>
-</ul>
-<hr />
-<h2 id="7-consistencia-e-replicacao">7. Consistência e Replicação</h2>
+<h2 id="4-consistencia-e-replicacao">4. Consistência e Replicação</h2>
 <p>A replicação de dados (criar cópias) é usada para aumentar a disponibilidade e o desempenho, mas gera o problema da consistência.</p>
 <ul>
 <li><strong>Replicação:</strong> Aumenta a tolerância a falhas e a performance.</li>
